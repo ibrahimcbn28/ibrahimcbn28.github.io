@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alanı eşit dağıt */
+}
+
+header .logo {
+    width: 200px; /* Logonun boyutunu ayarlayın */
+    height: auto;
+}
+
+header nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Menü öğelerini ortala */
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #e8491d;
+}
+
+section {
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+    color: #333;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+section#services .service {
+    margin-bottom: 20px;
+}
+
+section#services .service h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+section#services .service p {
+    font-size: 14px;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #777;
+}
+
+footer .footer-logo {
+    position: absolute;
+    width: 150px; /* Logonun boyutunu artırdık */
+    height: auto;
+    bottom: 10px;
+}
+
+footer .left-logo {
+    left: 20px;
+}
+
+footer .right-logo {
+    right: 20px;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #e8491d;
+}
+
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    width: 100%;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo {
+        margin: 0 0 10px 0;
+    }
+
+    header nav {
+        text-align: center;
+    }
+
+    header nav ul {
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+
+    section#services .service h3 {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    footer .footer-logo {
+        width: 120px; /* Logonun boyutunu ayarlayın */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 0;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    section p {
+        font-size: 12px;
+    }
+
+    section#services .service h3 {
+        font-size: 18px;
+    }
+
+    footer .footer-logo {
+        width: 100px; /* Logonun boyutunu ayarlayın */
+    }
+}
